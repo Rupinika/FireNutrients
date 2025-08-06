@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FIRE Nutrients Test Kit</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🔥</text></svg>">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="logo-container">
+                <div class="logo">
+                    <div class="leaf leaf-left"></div>
+                    <div class="fire">
+                        <div class="flame flame-1"></div>
+                        <div class="flame flame-2"></div>
+                        <div class="flame flame-3"></div>
+                    </div>
+                    <div class="leaf leaf-right"></div>
+                </div>
+            </div>
+            <h1 class="title">FIRE Nutrients Test Kit</h1>
+            <p class="subtitle">Find the fuel you need to burn bright</p>
+            <p class="tagline">Advanced Nutrient Deficiency Analysis for Optimal Human Health</p>
+        </header>
+
+        <main class="main-content">
+            <section class="hero-section">
+                <div class="hero-content">
+                    <h2>Find the Fuel You Need to Burn Bright</h2>
+                    <p>Discover exactly what nutrients your body needs with our cutting-edge FIRE Nutrients Test Kit. Using simple urine samples, get accurate, reliable results in minutes and track your health progress over time to fuel your brightest self.</p>
+                    <button class="cta-button">Start Your Health Journey</button>
+                </div>
+                <div class="hero-image">
+                    <div class="test-kit-mockup">
+                        <div class="kit-container">
+                            <div class="test-tube"></div>
+                            <div class="test-tube"></div>
+                            <div class="test-tube"></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="features-section">
+                <h2>Why Choose FIRE Nutrients Test Kit?</h2>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">⚡</div>
+                        <h3>Fast Results</h3>
+                        <p>Get accurate nutrient deficiency readings from urine samples in under 5 minutes</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">🎯</div>
+                        <h3>Precise Analysis</h3>
+                        <p>Advanced technology ensures 99.9% accuracy for human health optimization</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">👤</div>
+                        <h3>Personalized Fuel</h3>
+                        <p>Tailored recommendations to help you find the fuel you need to burn bright</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">📱</div>
+                        <h3>Progress Tracking</h3>
+                        <p>Monitor your nutrient levels and watch your inner fire grow stronger over time</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="how-it-works">
+                <h2>How It Works</h2>
+                <div class="steps-container">
+                    <div class="step">
+                        <div class="step-number">1</div>
+                        <h3>Collect Sample</h3>
+                        <p>Take a simple urine sample using our easy-to-use, non-invasive kit</p>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">2</div>
+                        <h3>Test & Analyze</h3>
+                        <p>Our advanced system analyzes your nutrient levels to find your fuel</p>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">3</div>
+                        <h3>Get Results</h3>
+                        <p>Receive detailed deficiency analysis and personalized recommendations to burn bright</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="progress-tracking">
+                <h2>Track Your Brightness Progress</h2>
+                <p class="section-subtitle">Monitor your nutrient levels and see your inner fire grow stronger over time</p>
+                
+                <div class="tracking-dashboard">
+                    <div class="dashboard-header">
+                        <h3>Your Fuel Dashboard</h3>
+                        <button class="add-result-btn" onclick="openAddResultModal()">+ Add New Test Result</button>
+                    </div>
+                    
+                    <div class="progress-cards" id="progressCards">
+                        <!-- Progress cards will be dynamically generated here -->
+                        <div class="progress-card">
+                            <h4>Vitamin D</h4>
+                            <p>Date: 2024-07-15</p>
+                            <p>Value: 30 ng/mL</p>
+                        </div>
+                        <div class="progress-card">
+                            <h4>Iron</h4>
+                            <p>Date: 2024-07-15</p>
+                            <p>Value: 70 µg/dL</p>
+                        </div>
+                        <div class="progress-card">
+                            <h4>B12</h4>
+                            <p>Date: 2024-07-15</p>
+                            <p>Value: 400 pg/mL</p>
+                        </div>
+                    </div>
+
+                    <div class="trend-chart">
+                        <h4>6-Month Brightness Trend</h4>
+                        <div class="chart-container">
+                            <div class="chart-line" id="trendChart">
+                                <!-- Chart points will be dynamically generated here -->
+                                <div class="chart-point" style="left: 0%; bottom: 40%;"></div>
+                                <div class="chart-point" style="left: 20%; bottom: 60%;"></div>
+                                <div class="chart-point" style="left: 40%; bottom: 50%;"></div>
+                                <div class="chart-point" style="left: 60%; bottom: 70%;"></div>
+                                <div class="chart-point" style="left: 80%; bottom: 65%;"></div>
+                                <div class="chart-point" style="left: 100%; bottom: 75%;"></div>
+                                
+                            </div>
+                        </div>
+                        <div class="chart-labels">
+                            <span>Jan</span>
+                            <span>Feb</span>
+                            <span>Mar</span>
+                            <span>Apr</span>
+                            <span>May</span>
+                            <span>Jun</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="nutrients-tested">
+                <h2>Fuel Your Fire - Nutrients We Test</h2>
+                <div class="nutrients-grid">
+                    <div class="nutrient-item">
+                        <div class="nutrient-icon">🌞</div>
+                        <h4>Vitamin D</h4>
+                        <p>Essential for bone health and immune function - your sunshine fuel</p>
+                    </div>
+                    <div class="nutrient-item">
+                        <div class="nutrient-icon">🩸</div>
+                        <h4>Iron</h4>
+                        <p>Critical for oxygen transport and energy production - power your fire</p>
+                    </div>
+                    <div class="nutrient-item">
+                        <div class="nutrient-icon">🧠</div>
+                        <h4>B12</h4>
+                        <p>Vital for nerve function and red blood cell formation - fuel your mind</p>
+                    </div>
+                    <div class="nutrient-item">
+                        <div class="nutrient-icon">💪</div>
+                        <h4>Magnesium</h4>
+                        <p>Important for muscle and nerve function - strengthen your flame</p>
+                    </div>
+                    <div class="nutrient-item">
+                        <div class="nutrient-icon">👁️</div>
+                        <h4>Vitamin A</h4>
+                        <p>Essential for vision and immune health - see your path clearly</p>
+                    </div>
+                    <div class="nutrient-item">
+                        <div class="nutrient-icon">🛡️</div>
+                        <h4>Zinc</h4>
+                        <p>Supports immune system and wound healing - protect your fire</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="mission-section">
+                <div class="mission-content">
+                    <h2>Our Mission</h2>
+                    <p class="mission-text">"Find the fuel you need to burn bright" - We believe everyone deserves to discover their optimal health potential. Through simple urine testing, we help you identify exactly what nutrients your body needs to thrive, so you can shine your brightest and live your most vibrant life.</p>
+                    <div class="mission-stats">
+                        <div class="stat">
+                            <span class="stat-number">99.9%</span>
+                            <span class="stat-label">Accuracy</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">5 min</span>
+                            <span class="stat-label">Results</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">6+</span>
+                            <span class="stat-label">Nutrients</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <p>&copy; 2024 FIRE Nutrients Test Kit. Find the fuel you need to burn bright.</p>
+        </footer>
+    </div>
+
+    <!-- Add Result Modal -->
+    <div id="addResultModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Add New Test Result</h3>
+                <span class="close" onclick="closeAddResultModal()">&times;</span>
+            </div>
+            <form id="addResultForm" onsubmit="addNewResult(event)">
+                <div class="form-group">
+                    <label for="testDate">Test Date:</label>
+                    <input type="date" id="testDate" name="testDate" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="nutrientType">Nutrient Type:</label>
+                    <select id="nutrientType" name="nutrientType" required>
+                        <option value="">Select Nutrient</option>
+                        <option value="vitamin-d">Vitamin D</option>
+                        <option value="iron">Iron</option>
+                        <option value="b12">B12</option>
+                        <option value="magnesium">Magnesium</option>
+                        <option value="vitamin-a">Vitamin A</option>
+                        <option value="zinc">Zinc</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="testValue">Test Value:</label>
+                    <input type="number" id="testValue" name="testValue" step="0.1" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="unit">Unit:</label>
+                    <select id="unit" name="unit" required>
+                        <option value="">Select Unit</option>
+                        <option value="ng/mL">ng/mL</option>
+                        <option value="µg/dL">µg/dL</option>
+                        <option value="pg/mL">pg/mL</option>
+                        <option value="mg/dL">mg/dL</option>
+                        <option value="µg/dL">µg/dL</option>
+                    </select>
+                </div>
+                
+                <div class="form-actions">
+                    <button type="button" class="cancel-btn" onclick="closeAddResultModal()">Cancel</button>
+                    <button type="submit" class="save-btn">Save Result</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html> 
